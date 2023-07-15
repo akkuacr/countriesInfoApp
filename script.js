@@ -46,6 +46,7 @@ function renderCountries(data){
 })
 }
 
+
 searchInput.addEventListener('input', (e)=>{
   console.log(e.target.value);
   const filteredCountries= allCountriesData.filter((country)=> country.name.common.toLowerCase().includes(e.target.value.toLowerCase()) )
